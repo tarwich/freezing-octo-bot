@@ -1,6 +1,9 @@
 package com.samueldillow.server;
 
+import java.io.File;
 import java.io.IOException;
+import java.util.Enumeration;
+import java.util.Iterator;
 import java.util.Scanner;
 
 import javax.servlet.Filter;
@@ -10,6 +13,8 @@ import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletRequestWrapper;
+import javax.servlet.http.HttpServletResponse;
 
 import com.google.gwt.user.server.rpc.RemoteServiceServlet;
 
@@ -29,17 +34,73 @@ public class MainServlet extends RemoteServiceServlet implements Filter {
 		
 		// If the conversion was successful
 		if(httpRequest != null) {
-			Scanner scanner = new Scanner(httpRequest.getRequestURI()).useDelimiter("/");
+			// Get the uri of the request
+			String uri = httpRequest.getRequestURI();
+			// Make a scanner to parse the url
+			Scanner scanner = new Scanner(uri).useDelimiter("/");
+			// Figure out what the action of this url is
+			String action = scanner.hasNext() ? scanner.next() : "";
 			
-			if(scanner.hasNext()) {
-				System.out.println("next: " + scanner.next());
+			switch(action.hashCode()) {
+				// Send the request to this class' request handler
+				case 0                         : request.getRequestDispatcher("MainServlet").include(request, response)     ; break;
+				case /* edit */ 0x2F6E0A       : request.getRequestDispatcher("MainServlet").include(request, response)     ; break;
+				case /* resources */ 0x89CCBE25: filterResourceRequest(httpRequest, response); break; 
+				
+				default:
+					// See if we can get the extension of the request (default to "")
+					String type = new Scanner(action).findInLine("(?<=\\.).*?$");
+					
+					// Couldn't resolve action, so try type
+					switch(type != null ? type.hashCode() : 0) {
+						case /* css */ 0x18203: filterResourceRequest(httpRequest, response); break;
+						
+						default:
+							System.out.printf("Unable to route%s request (%s) for url: %s\n"
+									, type == null ? "" : type
+									, action
+									, httpRequest.getRequestURI()
+									);
+					}
+					break;
 			}
 		}
 		
-		else System.out.println("Rqeuest not supported");
+		// Request not supported: Invoke the next entity in the chain using the FilterChain object
+		else chain.doFilter(request, response);
+	}
+	
+	/**
+	 * Filters a request, but using resource finding logic
+	 * 
+	 * @param request  The request from JEE
+	 * @param response The response to which to write a response
+	 */
+	private void filterResourceRequest(HttpServletRequest request, ServletResponse response) {
+		// Get the uri from the request
+		String uri = request.getRequestURI();
+		
+	}
+
+	@Override
+	public void init(FilterConfig config) throws ServletException { 
 	}
 	
 	@Override
-	public void init(FilterConfig config) throws ServletException { 
+	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// Get the uri part of the request
+		String uri = request.getRequestURI();
+		// Make a scanner to process the uri
+		Scanner scanner = new Scanner(uri).useDelimiter("/");
+		// If there is a next item, then get it. Otherwise use an empty string
+		String action = scanner.hasNext() ? scanner.next() : "";
+		
+		switch(action.hashCode()) {
+			case 0:
+			default:
+				// Send request to SamuelDillow.html
+				request.getRequestDispatcher("/pages/SamuelDillow.jsp").include(request, response);
+				break;
+		}
 	}
 }

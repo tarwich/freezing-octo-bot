@@ -16,6 +16,7 @@
 		<filter-name>Server</filter-name>
 		<filter-class>com.samueldillow.server.MainServlet</filter-class>
 	</filter>
+	
 	<filter-mapping>
 		<filter-name>Server</filter-name>
 		<url-pattern>/*</url-pattern>
@@ -23,7 +24,7 @@
 	
 	<servlet-mapping>
 		<servlet-name>MainServlet</servlet-name>
-		<url-pattern>/server</url-pattern>
+		<url-pattern>/MainServlet</url-pattern>
 	</servlet-mapping>
 
 	<!-- Default page to serve -->
