@@ -2,8 +2,6 @@ package com.samueldillow.server;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.Enumeration;
-import java.util.Iterator;
 import java.util.Scanner;
 
 import javax.servlet.Filter;
@@ -13,7 +11,6 @@ import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletRequestWrapper;
 import javax.servlet.http.HttpServletResponse;
 
 import com.google.gwt.user.server.rpc.RemoteServiceServlet;
@@ -78,8 +75,26 @@ public class MainServlet extends RemoteServiceServlet implements Filter {
 	 */
 	private void filterResourceRequest(HttpServletRequest request, ServletResponse response) {
 		// Get the uri from the request
-		String uri = request.getRequestURI();
+		String uri = "." + request.getRequestURI();
+		// The type of the file we're supposed to be serving
+		String type = new Scanner(uri).findInLine("(?<=\\.)[^\\.]*?$");
+		// The file that matches the request
+		File file;
 		
+		// First start with uri
+		file = new File(uri);
+		// Next look in resources/(type)...
+		if(!file.exists()) file = new File(uri.replaceAll("resources/(.*?)", "resources/"+type+"/$1"));
+		// Finally look in **/(type)/(file)
+		if(!file.exists()) file = new File(uri.replaceAll("(.*)/(.*?)$1", "$1/"+type+"/$2"));
+		
+		
+		try {
+			// Stream the file
+			request.getRequestDispatcher("/" + file.getPath()).include(request, response);
+		} catch (Throwable e) {
+			e.printStackTrace();
+		}
 	}
 
 	@Override
