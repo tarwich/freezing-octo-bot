@@ -207,6 +207,7 @@ section content {
 	border           : 1px solid #88B ; 
 	border-width     : 1px 0          ; 
 	list-style       : none           ; 
+	padding          : 0px 2px        ;
 }
 
 /** Obfuscator **/
