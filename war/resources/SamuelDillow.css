@@ -47,7 +47,7 @@ nobreak, .nobreak {
 .page-header li {
 	display    : inline-block ; 
 	width      : 30%          ; 
-	text-align : left         ; 
+	text-align : center       ; 
 }
 
 /** -Languages **/
