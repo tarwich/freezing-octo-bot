@@ -35,7 +35,7 @@
               <td>
                 <div class='skill'>
                   <div class='skill-image'>
-                    <img src='resources/images/logos/apache-http.png' />
+                    <img src='resources/logos/apache-http.png' />
                   </div>
                   <div class='skill-name'>Apache HTTP</div>
                   <div class='skill-level'>Expert</div>
@@ -45,7 +45,7 @@
               <td>
                 <div class='skill'>
                   <div class='skill-image'>
-                    <img src='resources/images/logos/linux.png' />
+                    <img src='resources/logos/linux.png' />
                   </div>
                   <div class='skill-name'>Linux</div>
                   <div class='skill-level'>Advanced</div>
@@ -55,7 +55,7 @@
               <td>
                 <div class='skill'>
                   <div class='skill-image'>
-                    <img src='resources/images/logos/ms-access.png' />
+                    <img src='resources/logos/ms-access.png' />
                   </div>
                   <div class='skill-name'>MS Access</div>
                   <div class='skill-level'>Advanced</div>
@@ -65,7 +65,7 @@
               <td>
                 <div class='skill'>
                   <div class='skill-image'>
-                    <img src='resources/images/logos/mysql.png' />
+                    <img src='resources/logos/mysql.png' />
                   </div>
                   <div class='skill-name'>MySQL</div>
                   <div class='skill-level'>Advanced</div>
@@ -75,7 +75,7 @@
               <td>
                 <div class='skill'>
                   <div class='skill-image'>
-                    <img src='resources/images/logos/oracle.png' />
+                    <img src='resources/logos/oracle.png' />
                   </div>
                   <div class='skill-name'>Oracle</div>
                   <div class='skill-level'>Good</div>
@@ -87,7 +87,7 @@
               <td>
                 <div class='skill'>
                   <div class='skill-image'>
-                    <img src='resources/images/logos/puremvc.png' />
+                    <img src='resources/logos/puremvc.png' />
                   </div>
                   <div class='skill-name'>PureMVC</div>
                   <div class='skill-level'>Advanced</div>
@@ -97,7 +97,7 @@
               <td>
                 <div class='skill'>
                   <div class='skill-image'>
-                    <img src='resources/images/logos/sql-server.png' />
+                    <img src='resources/logos/sql-server.png' />
                   </div>
                   <div class='skill-name'>SQL Server</div>
                   <div class='skill-level'>Advanced</div>
@@ -119,7 +119,7 @@
               <td>
                 <div class='language'>
                   <div class='language-image'>
-                    <img src='resources/images/logos/ajax-dhtml.png' />
+                    <img src='resources/logos/ajax-dhtml.png' />
                   </div>
                   <div class='language-name'>AJAX/DHTML</div>
                   <div class='language-level'>Expert</div>
@@ -129,7 +129,7 @@
               <td>
                 <div class='language'>
                   <div class='language-image'>
-                    <img src='resources/images/logos/asp.png' />
+                    <img src='resources/logos/asp.png' />
                   </div>
                   <div class='language-name'>ASP</div>
                   <div class='language-level'>Expert</div>
@@ -139,7 +139,7 @@
               <td>
                 <div class='language'>
                   <div class='language-image'>
-                    <img src='resources/images/logos/asp-net.png' />
+                    <img src='resources/logos/asp-net.png' />
                   </div>
                   <div class='language-name'>ASP.NET</div>
                   <div class='language-level'>Advanced</div>
@@ -149,7 +149,7 @@
               <td>
                 <div class='language'>
                   <div class='language-image'>
-                    <img src='resources/images/logos/awk.png' />
+                    <img src='resources/logos/awk.png' />
                   </div>
                   <div class='language-name'>AWK</div>
                   <div class='language-level'>Good</div>
@@ -159,7 +159,7 @@
               <td>
                 <div class='language'>
                   <div class='language-image'>
-                    <img src='resources/images/logos/actionscript-2.png' />
+                    <img src='resources/logos/actionscript-2.png' />
                   </div>
                   <div class='language-name'>ActionScript 2</div>
                   <div class='language-level'>Expert</div>
@@ -171,7 +171,7 @@
               <td>
                 <div class='language'>
                   <div class='language-image'>
-                    <img src='resources/images/logos/actionscript-3.png' />
+                    <img src='resources/logos/actionscript-3.png' />
                   </div>
                   <div class='language-name'>ActionScript 3</div>
                   <div class='language-level'>Expert</div>
@@ -181,7 +181,7 @@
               <td>
                 <div class='language'>
                   <div class='language-image'>
-                    <img src='resources/images/logos/autohotkey.png' />
+                    <img src='resources/logos/autohotkey.png' />
                   </div>
                   <div class='language-name'>AutoHotkey</div>
                   <div class='language-level'>Expert</div>
@@ -191,7 +191,7 @@
               <td>
                 <div class='language'>
                   <div class='language-image'>
-                    <img src='resources/images/logos/bashellscript.png' />
+                    <img src='resources/logos/bashellscript.png' />
                   </div>
                   <div class='language-name'>BaSHellScript</div>
                   <div class='language-level'>Advanced</div>
@@ -201,7 +201,7 @@
               <td>
                 <div class='language'>
                   <div class='language-image'>
-                    <img src='resources/images/logos/c-c-.png' />
+                    <img src='resources/logos/c-c-.png' />
                   </div>
                   <div class='language-name'>C / C++</div>
                   <div class='language-level'>Advanced</div>
@@ -211,7 +211,7 @@
               <td>
                 <div class='language'>
                   <div class='language-image'>
-                    <img src='resources/images/logos/c-sharp-c-.png' />
+                    <img src='resources/logos/c-sharp-c-.png' />
                   </div>
                   <div class='language-name'>C Sharp (C#)</div>
                   <div class='language-level'>Advanced</div>
@@ -223,7 +223,7 @@
               <td>
                 <div class='language'>
                   <div class='language-image'>
-                    <img src='resources/images/logos/css.png' />
+                    <img src='resources/logos/css.png' />
                   </div>
                   <div class='language-name'>CSS</div>
                   <div class='language-level'>Expert</div>
@@ -233,7 +233,7 @@
               <td>
                 <div class='language'>
                   <div class='language-image'>
-                    <img src='resources/images/logos/cold-fusion.png' />
+                    <img src='resources/logos/cold-fusion.png' />
                   </div>
                   <div class='language-name'>Cold Fusion</div>
                   <div class='language-level'>Good</div>
@@ -243,7 +243,7 @@
               <td>
                 <div class='language'>
                   <div class='language-image'>
-                    <img src='resources/images/logos/flex.png' />
+                    <img src='resources/logos/flex.png' />
                   </div>
                   <div class='language-name'>Flex</div>
                   <div class='language-level'>Expert</div>
@@ -253,7 +253,7 @@
               <td>
                 <div class='language'>
                   <div class='language-image'>
-                    <img src='resources/images/logos/gwbasic.png' />
+                    <img src='resources/logos/gwbasic.png' />
                   </div>
                   <div class='language-name'>GWBasic</div>
                   <div class='language-level'>Expert</div>
@@ -263,7 +263,7 @@
               <td>
                 <div class='language'>
                   <div class='language-image'>
-                    <img src='resources/images/logos/html-4.png' />
+                    <img src='resources/logos/html-4.png' />
                   </div>
                   <div class='language-name'>HTML 4</div>
                   <div class='language-level'>Expert</div>
@@ -275,7 +275,7 @@
               <td>
                 <div class='language'>
                   <div class='language-image'>
-                    <img src='resources/images/logos/jscript.png' />
+                    <img src='resources/logos/jscript.png' />
                   </div>
                   <div class='language-name'>JScript</div>
                   <div class='language-level'>Advanced</div>
@@ -285,7 +285,7 @@
               <td>
                 <div class='language'>
                   <div class='language-image'>
-                    <img src='resources/images/logos/java.png' />
+                    <img src='resources/logos/java.png' />
                   </div>
                   <div class='language-name'>Java</div>
                   <div class='language-level'>Good</div>
@@ -295,7 +295,7 @@
               <td>
                 <div class='language'>
                   <div class='language-image'>
-                    <img src='resources/images/logos/lisp.png' />
+                    <img src='resources/logos/lisp.png' />
                   </div>
                   <div class='language-name'>LISP</div>
                   <div class='language-level'>Good</div>
@@ -305,7 +305,7 @@
               <td>
                 <div class='language'>
                   <div class='language-image'>
-                    <img src='resources/images/logos/objective-c.png' />
+                    <img src='resources/logos/objective-c.png' />
                   </div>
                   <div class='language-name'>Objective-C</div>
                   <div class='language-level'>Fair</div>
@@ -315,7 +315,7 @@
               <td>
                 <div class='language'>
                   <div class='language-image'>
-                    <img src='resources/images/logos/php.png' />
+                    <img src='resources/logos/php.png' />
                   </div>
                   <div class='language-name'>PHP</div>
                   <div class='language-level'>Expert</div>
@@ -327,7 +327,7 @@
               <td>
                 <div class='language'>
                   <div class='language-image'>
-                    <img src='resources/images/logos/pascal.png' />
+                    <img src='resources/logos/pascal.png' />
                   </div>
                   <div class='language-name'>Pascal</div>
                   <div class='language-level'>Good</div>
@@ -337,7 +337,7 @@
               <td>
                 <div class='language'>
                   <div class='language-image'>
-                    <img src='resources/images/logos/perl.png' />
+                    <img src='resources/logos/perl.png' />
                   </div>
                   <div class='language-name'>Perl</div>
                   <div class='language-level'>Good</div>
@@ -347,7 +347,7 @@
               <td>
                 <div class='language'>
                   <div class='language-image'>
-                    <img src='resources/images/logos/qbasic.png' />
+                    <img src='resources/logos/qbasic.png' />
                   </div>
                   <div class='language-name'>QBasic</div>
                   <div class='language-level'>Expert</div>
@@ -357,7 +357,7 @@
               <td>
                 <div class='language'>
                   <div class='language-image'>
-                    <img src='resources/images/logos/sgml.png' />
+                    <img src='resources/logos/sgml.png' />
                   </div>
                   <div class='language-name'>SGML</div>
                   <div class='language-level'>Expert</div>
@@ -367,7 +367,7 @@
               <td>
                 <div class='language'>
                   <div class='language-image'>
-                    <img src='resources/images/logos/tcl.png' />
+                    <img src='resources/logos/tcl.png' />
                   </div>
                   <div class='language-name'>TCL</div>
                   <div class='language-level'>Advanced</div>
@@ -379,7 +379,7 @@
               <td>
                 <div class='language'>
                   <div class='language-image'>
-                    <img src='resources/images/logos/vbscript.png' />
+                    <img src='resources/logos/vbscript.png' />
                   </div>
                   <div class='language-name'>VBScript</div>
                   <div class='language-level'>Expert</div>
@@ -389,7 +389,7 @@
               <td>
                 <div class='language'>
                   <div class='language-image'>
-                    <img src='resources/images/logos/visual-basic.png' />
+                    <img src='resources/logos/visual-basic.png' />
                   </div>
                   <div class='language-name'>Visual Basic</div>
                   <div class='language-level'>Advanced</div>
@@ -399,7 +399,7 @@
               <td>
                 <div class='language'>
                   <div class='language-image'>
-                    <img src='resources/images/logos/xml.png' />
+                    <img src='resources/logos/xml.png' />
                   </div>
                   <div class='language-name'>XML</div>
                   <div class='language-level'>Expert</div>
@@ -409,7 +409,7 @@
               <td>
                 <div class='language'>
                   <div class='language-image'>
-                    <img src='resources/images/logos/haxe.png' />
+                    <img src='resources/logos/haxe.png' />
                   </div>
                   <div class='language-name'>haXe</div>
                   <div class='language-level'>Advanced</div>
