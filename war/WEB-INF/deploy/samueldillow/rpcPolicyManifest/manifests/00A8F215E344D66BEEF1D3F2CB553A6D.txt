@@ -1,2 +1,0 @@
-serviceClass: com.samueldillow.client.GreetingService
-path: 1E728B9E116632906E2832B63CC458D9.gwt.rpc
