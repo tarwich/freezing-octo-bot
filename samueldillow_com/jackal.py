@@ -1,5 +1,6 @@
 import pprint
 import sys
+import re
 
 # ==================================================
 # 
@@ -43,6 +44,8 @@ class Jackal():
         action = uri.pop(0) or Jackal.default_action
         # Tail is whatever is left in the uri (minus any empties)
         tail = filter(None, uri)
+        # Format the module name
+        module = re.sub(r'\W+', '_', module)
         # Get the module (class) that we're going to call
         instance = self.get_class(module)
         # Execute the action on the instance

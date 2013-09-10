@@ -1,12 +1,25 @@
-application: samueldillow-com
+application: samueldillow
 runtime    : python27
 api_version: 1
 threadsafe : yes
+version    : 1
 libraries:
     -
         name   : jinja2
         version: 2.6
-handlers   :
+handlers:
+    -
+        url         : /resources/(.*\.(png|gif|jpg|jpeg))
+        static_files: private/modules/Site/resources/images/\1
+        upload      : private/modules/Site/resources/images/(.*\.(png|gif|jpg|jpeg))
+    -
+        url         : /resources/(.*\.(css))
+        static_files: private/modules/Site/resources/\1
+        upload      : private/modules/Site/resources/(.*\.(css))
+    -
+        url         : /favicon.ico
+        static_files: private/favicon.ico
+        upload      : private/favicon.ico
     -
         url   : /.*
         script: runner.run

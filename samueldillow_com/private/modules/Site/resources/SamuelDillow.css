@@ -1,0 +1,251 @@
+@charset "utf-8"
+
+/** HTML **/
+html {
+	margin:0;
+}
+
+
+/** Body **/
+body {
+	margin      : 0;
+	font-family : "Courier New", monospace, sans-serif;
+	font-size   : 8pt;
+}
+
+
+/** Not List **/
+ul.not-list {
+	display    : block;
+	margin     : 0;
+	list-style : none outside none;
+	padding    : 0;
+}
+
+/** Nobreak **/
+nobreak, .nobreak {
+	white-space : nowrap ; 
+	display     : block  ; 
+}
+
+/** Page Header **/
+.page-header {
+	margin           : 0;
+	background-color : #2A4480;
+	color            : white;
+	font-size        : 10pt;
+	display          : block;
+	padding          : 7px 20px;
+	text-align       : center;
+}
+
+.page-header ul {
+	width   : 70%          ; 
+	display : inline-block ; 
+}
+
+.page-header li {
+	display    : inline-block ; 
+	width      : 30%          ; 
+	text-align : left         ; 
+}
+
+/** -Languages **/
+.page-header ul.languages {
+	display : block ; 
+	height  : 20px  ; 
+}
+
+.page-header ul.languages li {
+	width  : auto  ; 
+	float  : left  ; 
+	margin : 0 2px ; 
+}
+
+.page-header li a {
+	color           : white            ; 
+	text-decoration : none             ; 
+	border          : 1px outset white ; 
+	padding         : 1px 4px          ; 
+}
+
+/** View Source **/
+.view-source {
+}
+
+.view-source { 
+	position         : absolute                     ; 
+	top              : 0                            ; 
+	right            : 0                            ; 
+	width            : 100px                        ; 
+	height           : 100px                        ; 
+	background-image : url(../images/curl-back.png) ; 
+	}
+
+#jean {
+	position    : absolute                 ; 
+	top         : 0px                      ; 
+	right       : 0px                      ; 
+	width       : 45px                     ; 
+	height      : 50px                     ; 
+	font-family : "Courier New", monospace ; 
+	font-weight : bold                     ; 
+}
+
+.view-source .link {
+	float        : right      ; 
+	margin-top   : 91px       ; 
+	margin-right : 4px        ; 
+	font-size    : 10px       ; 
+	font-family  : sans-serif ; 
+}
+
+/** Page Meat **/
+.page-body {
+	margin        : 25px 10% ; 
+	margin-bottom : 0        ; 
+}
+
+
+/** Page Footer **/
+.page-footer {
+	border-top : 1px solid #06266F;
+	text-align : center;
+}
+
+
+.page-footer li {
+	display     : inline;
+	width       : 20%;
+	border-left : 1px solid #06266F;
+	text-align  : left;
+	padding     : 8px 0px 4px 8px;
+	margin      : 0;
+	line-height : 20px;
+}
+
+
+.page-footer li:first-child {
+	border: 0 none;
+}
+
+
+/** Section **/
+section, 
+div.section {
+	background-color : #C4D1FC ; 
+	margin-bottom    : 30px    ; 
+	padding-bottom   : 10px    ; 
+	display          : block   ; 
+}
+
+
+section label,
+.section .section-title {
+	display                     : block    ; 
+	background-color            : #4671D5  ; 
+	color                       : white    ; 
+	padding                     : 4px 10px ; 
+	-moz-border-radius-topleft  : 5px      ; 
+	-moz-border-radius-topright : 5px      ; 
+}
+
+section content {
+	display    : block ; 
+	text-align : left  ; 
+}
+
+/** Profile **/
+.profile-section .section-body { padding     : 5px 0px 0px 10px ; }
+.profile-section .section-body { margin      : 0px 6px          ; }
+.profile-section p             { text-indent : 0.25in           ; }
+
+/** Employment **/
+.employment-section .job { padding: 10px; }
+
+.employment-section .job-position {
+	border-left  : 9px solid #06266F;
+	padding-left : 3px;
+	line-height  : 20px;
+}
+
+.employment-section .employer {
+	margin-bottom    : 10px;
+	background-color : #4671D5;
+	padding          : 2px 5px;
+	-moz-border-radius : 5px;
+}
+
+.employment-section .job-time    { 
+	float       : right ; 
+	line-height : 20px  ; 
+}
+.employment-section .job-time li {
+	padding    : 0 10px ; 
+	text-align : center ; 
+	color      : #224   ; 
+}
+.employment-section .job-time li:first-child { color: white; }
+
+.employment-section .job-feats { 
+	margin       : 0 35px  ; 
+	margin-right : 5px     ; 
+	text-align   : justify ; 
+}
+.employment-section .job-feats li { 
+	list-style : decimal-leading-zero ; 
+	border-top : 1px dotted #224      ; 
+	padding    : 5px 0                ; 
+}
+.employment-section .job-feats li:first-child { border-top : 0 none ; }
+
+.employment-section .job-skills { font-size: 8pt; text-align: center; padding: 0 18%;}
+.employment-section .job-skills li {
+	display          : inline-block   ; 
+	background-color : #AAD           ; 
+	margin           : 2px 2px        ; 
+	border           : 1px solid #88B ; 
+	border-width     : 1px 0          ; 
+	list-style       : none           ; 
+}
+
+/** Obfuscator **/
+span.etacsufbo i { font-style: normal; }
+span.etacsufbo b { display: none; }
+
+/** Skills **/
+
+skill {
+	display : inline-block    ; 
+	border  : 1px solid black ; 
+	width   : 20%             ; 
+	height  : 100px           ; 
+}
+
+section.skills-section         { display : table      ; }
+section.skills-section nobreak { display : table-row  ; }
+section.skills-section skill   { display : table-cell ; }
+
+.skills-section                                  { }
+.skills-section .section-body table              { width          : 100%         ; }
+.skills-section .section-body table td           { width          : 20%          ; text-align  : center ; }
+.skills-section .section-body table td div.skill { display        : inline-block ; white-space : nowrap ; }
+.skills-section .skill-level                     { display        : inline-block ; }
+.skills-section .skill-years                     { display        : inline-block ; }
+.skills-section .skill-image                     { height         : 50px         ; line-height : 50px   ; }
+.skills-section .skill-image img                 { vertical-align : middle       ; }
+
+/** Languages **/
+.languages-section                                  { }
+.languages-section .section-body table              { width          : 100%         ; }
+.languages-section .section-body table td           { width          : 20%          ; text-align  : center ; }
+.languages-section .section-body table td div.skill { display        : inline-block ; white-space : nowrap ; }
+.languages-section .language-level                  { display        : inline-block ; }
+.languages-section .language-years                  { display        : inline-block ; }
+.languages-section .language-image                  { height         : 50px         ; line-height : 50px   ; }
+.languages-section .language-image img              { vertical-align : middle       ; }
+
+/** Print **/
+@media print {
+	.view-source .link { display: none; } 
+}
