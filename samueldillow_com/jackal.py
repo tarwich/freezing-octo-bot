@@ -43,20 +43,23 @@ class Jackal():
         action = uri.pop(0) or Jackal.default_action
         # Tail is whatever is left in the uri (minus any empties)
         tail = filter(None, uri)
-        self.get_class(module)
+        # Get the module (class) that we're going to call
+        instance = self.get_class(module)
+        # Execute the action on the instance
+        self.execute_method(instance, action, uri)
+        
+    def execute_method(self, instance, method_name, parameters):
+        getattr(instance, method_name)(self, parameters)
     
     def get_class(self, module_name):
-        response = self.response
-        module = __import__("private.modules.Site.site")
-        test = private.modules.Site.Site()
-        response.write("<pre>"+pprint.PrettyPrinter().pformat(dir(module))+"</pre>")
-        # response = self.response
-        # module = __import__("site")
-        # response.write("<pre>"+pprint.PrettyPrinter().pformat(dir(module))+"</pre>")
-        # sys.path.insert(0, "private/modules/Site")
-        # response.write("<pre>"+pprint.PrettyPrinter().pformat(sys.path)+"</pre>")
-        # response.write("<pre>"+pprint.PrettyPrinter().pformat(dir(sys.path))+"</pre>")
-        
+        # Build a path to the module (one-time-use, but written for cleanliness of code)
+        path_to_module = ".".join(["private.modules", module_name.capitalize(), module_name.lower()])
+        # Load the python module that the class is in
+        module = __import__(path_to_module, globals(), locals(), ["Site"], -1)
+        # Instantiate the class
+        instance = getattr(module, module_name.capitalize())()
+        return instance
+    
     def handle(self, environment, start_response):
         # Get the Jackal response object
         response = self.response
